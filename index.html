@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="tang" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<title>图片白底变透明</title>
+
+	<link rel="stylesheet" type="text/css" href="toPNG.css" />
+</head>
+<body>
+	<div>
+		<p>可修改任意图片透明度，白底变透明，底下的输入条可拖动改变透明区域大小。</p>
+		<p>满意后右键另存为.png格式即可</p>
+	</div>
+	<div>
+		<input id="file" type="file" />
+	</div>
+	<div>
+		<img id="img" />
+	</div>
+	<div id="canvas"></div>
+	<div>
+		-1<input id="input" type="range" min=-1 max=255 step=1 value=255 />255<span id="input-value" style="margin-left: 2em; color: #c78;">255</span>
+	</div>
+	
+	<script type="text/javascript" src="myjs.js" ></script>
+	<script type="text/javascript" src="toPNG.js" ></script>
+</body>
+</html>
